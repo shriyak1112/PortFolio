@@ -11,6 +11,7 @@ import Crown from '../../img/crown.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion"
+import { Link } from 'react-scroll';
 
 
 const Intro = () => {
@@ -29,11 +30,18 @@ const Intro = () => {
             Enthusiastic novice full stack developer with a penchant for learning, creating, and collaborating on web solutions.
             </span>
             </div>
+             <Link to="contact" spy={true} smooth={true}>
             <button className='i-button button '>Hire me</button>
+            </Link>
             <div className='i-icon'>
-                <img src={Github} alt=""/>
+          <a href="https://github.com/shriyak1112" target="_blank" rel="noopener noreferrer">
+            <img src={Github} alt="GitHub" />
+          </a>
                 <img src={Instagram} alt=""/>
-                <img src={LinkedIn} alt=""/>
+          <a href="https://www.linkedin.com/in/shriya-kumari-b76643243" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+
             </div>
 
      
@@ -51,23 +59,23 @@ const Intro = () => {
 
 
     <motion.div
-    initial={{ top: "-4%", left: "74%" }}
-    whileInView={{ left: "68%" }}
+    initial={{ top: "-4%", left: "80%" }}
+    whileInView={{ left: "64%" }}
     transition={transition}
     className="floating-div"
    >
-        <FloatingDiv image ={Crown} txt1='Web' txt2='Developer' 
+          <FloatingDiv image={Crown} txt1='Tech-savvy' txt2='innovator' 
         />
 
     </motion.div>
 
     <motion.div
-     initial={{ left: "9rem", top: "18rem" }}
+     initial={{ left: "10rem", top: "14rem" }}
      whileInView={{ left: "0rem" }}
      transition={transition}
      className="floating-div"
    > 
-       <FloatingDiv image ={thumbup} txt1='Best Design' txt2='Award'/>
+          <FloatingDiv image={thumbup} txt1='Creative' txt2='problem solver'/>
 
     </motion.div>
 

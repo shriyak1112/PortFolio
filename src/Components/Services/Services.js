@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 
 const Services = () => {
-    const theme = useContext(themeContext);
+  const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   const transition = {
@@ -17,14 +17,11 @@ const Services = () => {
     type: "spring",
   };
 
-
-
-
   return (
     <div className='services' id='Services'>
          <div className='awesome'>
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
+        <span>Skills</span>
         <spane>
         As a hardworking and determined full stack developer,
         <br/>
@@ -34,8 +31,9 @@ const Services = () => {
 
         </spane>
 
-        <button className='button s-button'>Download CV</button>
-
+        <a href="https://drive.google.com/file/d/1SxHeHcqy6wwxg187bw67RHZ0GZJq8fB2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className='button s-button'>Download CV</button>
+        </a>
         <div className='blur s-blur1' style={{background:'#ABF1FF94'}}></div>
         </div>
 
@@ -48,8 +46,8 @@ const Services = () => {
         >
         <Card
         emoji={HeartEmoji}
-        heading ={'Design'}
-        detail={"Figma, Sketch, Photoshop, Adobe"}
+        heading ={'Miscellaneous'}
+        detail={"Java,Python,Git,GitHub"}
         />
         </motion.div>
 
