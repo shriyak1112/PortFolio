@@ -63,7 +63,7 @@ const TimelineSection = () => {
                 </p>
                 <button
                     className="button s-button"
-                    onClick={() => window.open("https://expense-tracker-l8kz.onrender.com/", "_blank")}
+                    onClick={() => window.open("https://expense-tracker-l8kz.onrender.com/login", "_blank")}
                 >
                     Visit Website
                 </button>
